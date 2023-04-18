@@ -1,0 +1,191 @@
+blockquote,
+body,
+dd,
+dir,
+dl,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+menu,
+ol,
+optgroup,
+p,
+pre,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(to right, #b33f2f, #751f16);
+  height: 100vh;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  padding: 20px;
+}
+
+.header .home {
+  padding: 16px 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+}
+
+.header .home a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .home .icon-home {
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+}
+
+.header .header-title {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+
+container {
+  padding: 0 20px 20px 20px;
+  display: block;
+}
+
+container .tip {
+  line-height: 24px;
+}
+
+container .contact {
+  width: 85%;
+  margin: 20px auto;
+}
+
+container .contact .contact-item {
+  border-radius: 16px;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+container .contact .contact-item .contact-item-type{
+  display: flex;
+  flex-direction: row;
+}
+
+container .contact .contact-item .contact-item-type .contact-item-type-logo {
+  width: 70px;
+  height: 70px;
+  color: #29a9ea;
+}
+
+container .contact .contact-item .contact-item-type .contact-item-type-logo.whatsapp{
+  color: #2cb742;
+}
+
+container .contact .contact-item .contact-item-type .contact-item-type-logo i {
+  display: block;
+  font-size: 70px;
+}
+
+container .contact .contact-item .contact-item-type .contact-item-type-name {
+  color: #000000;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+container .contact .contact-item .contact-item-type .contact-item-type-name p:first-child {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+container .contact .contact-item .contact-item-type .contact-item-type-name p:last-child {
+  color: #666666;
+  font-size: 16px;
+}
+
+container .contact .contact-item .contact-item-buttons {
+  width: 70%;
+  margin: 20px auto 0;
+}
+
+container .contact .contact-item .contact-item-buttons a {
+  display: block;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #df2b35;
+  text-align: center;
+  text-decoration: none;
+}
+
+container .contact .home-item {
+  /* border-radius: 16px;
+  background: #fff; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+container .contact .home-item .home-item-buttons {
+  width: 40%;
+  margin: 0 auto 0;
+}
+
+container .contact .home-item .home-item-buttons a {
+  display: block;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #df2b35;
+  background: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
