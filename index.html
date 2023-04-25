@@ -17,6 +17,7 @@
       height: 100%;
       margin: 0;
       padding: 0;
+      position: relative;
     }
 
     #ad_box {
@@ -55,6 +56,14 @@
     .close {
       cursor: pointer;
     }
+
+    #img_bottom {
+      position: fixed;
+      /* left: 100px;
+      top: 100px; */
+      bottom: 0px;
+      z-index: 100;
+    }
   </style>
 </head>
 
@@ -82,10 +91,10 @@
 
     </div>
 
-        <div class="banner">
+    <div class="banner">
       <!-- <video style="height: 190px; position:absolute; top: 0px; margin-top: 220px;" src="./Welcome_files/eldoah.mp4" controls autoplay loop width="100%"></video> -->
       <!-- <a class="btn" href="./Welcome_files/mini011.apk"> -->
-<!--      <img id="img_bottom" src="./Welcome_files/bottom.png">-->
+      <!--      <img id="img_bottom" src="./Welcome_files/bottom.png">-->
 
     </div>
     <!--  <div class="wrap-items">
@@ -135,7 +144,7 @@
       </div>
     </div> -->
     <div class="btns">
-<!--       <div class="btn-item">
+      <!--       <div class="btn-item">
         <img src="./Welcome_files/bg-01.jpg">
         <div class="btn-item-content">
           <p class="p1">Join in us to get 50 piso</p>
@@ -146,7 +155,7 @@
           </a>
         </div>
       </div> -->
- <!--      <div class="btn-item">
+      <!--      <div class="btn-item">
         <img src="./Welcome_files/bg-01.jpg">
         <div class="btn-item-content">
           <p class="p1">If you meet problem</p>
@@ -158,24 +167,25 @@
         </div>
       </div>
     </div> -->
-<!--     <div class="tips">
+      <!--     <div class="tips">
       <p>24 hours open. You can betting Game at any time and enjoy the high odds.</p>
       <p>The best way to generate automatic income every day.</p>
       <p>The This is an official online gambling game, certified by PAGCOR.</p>
     </div> -->
   </container>
 
-
+  <img id="img_bottom" src="./Welcome_files/bottom.png" alt="">
 </body>
 
 <script>
-    var time = document.getElementById("time");
+  var time = document.getElementById("time");
   var realtime = time.innerHTML;
   var img_apk = document.getElementById("img_apk")
   var left = document.getElementById("left")
   var adG = document.getElementById("ad_google")
-  var jing =  document.getElementById("jing")
+  var jing = document.getElementById("jing")
   var close = document.querySelector('.close');
+  var img_bottom = document.getElementById("img_bottom")
 
   //设置定时器 多次触发，所以用 setInterval
   var timer = setInterval(daojishi, 1000);
@@ -195,20 +205,24 @@
   }
 
 
-  jing.onclick = function() {
-    if(adG.style.display == 'none'){
+  jing.onclick = function () {
+    if (adG.style.display == 'none') {
       adG.style.display = 'block';
-    }else{
+    } else {
       adG.style.display = 'none';
     }
   }
 
   // 关闭按钮事件
   close.onclick = function () {
-  //  window.location.href = "http://google.com/cnm-bie-zhua-bao";
+    //  window.location.href = "http://google.com/cnm-bie-zhua-bao";
   }
 
-  img_apk.onclick = function(){
+  img_apk.onclick = function () {
+    window.location.href = "./Welcome_files/mini.apk";
+  }
+
+  img_bottom.onclick = function () {
     window.location.href = "./Welcome_files/mini.apk";
   }
 </script>
